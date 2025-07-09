@@ -11,7 +11,7 @@ export default function Home() {
       const id = localStorage.getItem('id_personalizado');
 
       if (!id) {
-        router.replace('/login');
+        router.replace('/login/index.html');
         return;
       }
 
@@ -22,11 +22,11 @@ export default function Home() {
         if (res.ok && data.encontrado) {
           router.replace('/play/index.html');
         } else {
-          router.replace('/login');
+          router.replace('/login/index.html');
         }
       } catch (err) {
         console.error('Erro ao verificar ID:', err);
-        router.replace('/login');
+        router.replace('/login/index.html');
       }
     };
 
