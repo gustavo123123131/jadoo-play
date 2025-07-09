@@ -26,7 +26,7 @@ export default function Home() {
         }
       } catch (err) {
         console.error('Erro ao verificar ID:', err);
-        router.replace('/login');
+        router.replace('/login/index.html');
       }
     };
 
